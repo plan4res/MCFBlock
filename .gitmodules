@@ -1,0 +1,5 @@
+
+[submodule "MCFClass"]
+	path = MCFClass
+	url = https://github.com/plan4res/MCFClass
+	branch = master
