@@ -1,0 +1,11 @@
+2019-02-02 [low] MCFRngdGroupModification, MCFSbstGroupModification
+
+	Define the two classes above, deriving from GroupModification and having
+	*nothing* different from GroupModification except the class name. Each time
+	a GroupModification containing a set of abstract Modification corresponding
+	to a given physical Ranged or Subset Modification, ensure that the
+	GroupModification is the right one between MCFRngdGroupModification and
+	MCFSbstGroupModification. Then, in map_forward_Modification() and/or
+	guts_of_add_Modification() use this information to implement specialized
+	treatment for these groups using a single call to the appropriate method
+	rather than many calls.
