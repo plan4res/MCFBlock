@@ -17,9 +17,6 @@
 get_filename_component(@modName@_CMAKE_DIR "${CMAKE_CURRENT_LIST_FILE}" PATH)
 include(CMakeFindDependencyMacro)
 
-# ----- Settings ------------------------------------------------------------ #
-set(MCFBlock_SOLVER "@MCFBlock_SOLVER@")
-
 # ----- Requirements -------------------------------------------------------- #
 find_dependency(SMS++)
 find_dependency(MCFClass)
@@ -32,3 +29,4 @@ endif ()
 set(@modName@_LIBRARIES @modNamespace@::@modName@)
 
 # --------------------------------------------------------------------------- #
+
